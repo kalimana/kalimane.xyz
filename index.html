@@ -1,75 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>3D Spinning Donut</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expose Watch – Shining a Light on the Dark</title>
   <style>
     body {
-      background-color: black;
-      color: white;
-      font-family: monospace;
-      font-size: 12px;
-      white-space: pre;
-      overflow: hidden;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
     }
-    #donut {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+    header {
+      background: #222;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 1rem;
+      background: white;
+    }
+    h1 {
+      font-size: 2em;
+    }
+    .fake-ad {
+      border: 1px dashed #ccc;
+      background: #f0f0f0;
+      padding: 1rem;
+      margin: 1rem 0;
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+    }
+    footer {
+      background: #eee;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.8em;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <pre id="donut"></pre>
+  <header>
+    <h1>Expose Watch</h1>
+    <p>Investigating darkness, exposing truth</p>
+  </header>
 
-  <script>
-    const pre = document.getElementById("donut");
-    let A = 1, B = 1;
+  <div class="container">
+    <h2>Pedophilia Is Not a Minor Issue — It’s a Global Crisis</h2>
+    <p><strong>Published July 16, 2025 | By Staff Writer</strong></p>
 
-    const renderDonut = () => {
-      const b = [];
-      const z = [];
-      const width = 40;
-      const height = 40;
+    <div class="fake-ad">
+      [FAKE AD] "Cure your boredom with MegaChews! Totally not suspicious candy!" 😅
+    </div>
 
-      for (let k = 0; k < width * height; k++) {
-        b[k] = ' ';
-        z[k] = 0;
-      }
+    <p>Pedophilia is a horrifying and deeply damaging crime that continues to affect millions of children around the world. It’s not a topic that’s easy to talk about, but silence is not an option when vulnerable lives are at stake.</p>
 
-      for (let j = 0; j < 6.28; j += 0.07) {
-        for (let i = 0; i < 6.28; i += 0.02) {
-          const c = Math.sin(i);
-          const d = Math.cos(j);
-          const e = Math.sin(A);
-          const f = Math.sin(j);
-          const g = Math.cos(A);
-          const h = d + 2;
-          const D = 1 / (c * h * e + f * g + 5);
-          const l = Math.cos(i);
-          const m = Math.cos(B);
-          const n = Math.sin(B);
-          const t = c * h * g - f * e;
+    <p>This behavior is not merely immoral — it is criminal and destructive. The trauma caused to victims often lasts a lifetime, leading to depression, PTSD, substance abuse, and even suicide. No society that considers itself civilized should tolerate the normalization or softening of this atrocity.</p>
 
-          const x = Math.floor(width / 2 + width * 0.5 * D * (l * h * m - t * n));
-          const y = Math.floor(height / 2 + height * 0.25 * D * (l * h * n + t * m));
-          const o = x + width * y;
-          const N = Math.floor(8 * ((f * e - c * d * g) * m - c * d * e - f * g - l * d * n));
+    <p>Some media narratives try to "understand" or "sympathize" with offenders under the guise of academic neutrality. But the safety of children must never be compromised for theoretical debates or sensationalism.</p>
 
-          if (height > y && y > 0 && x > 0 && width > x && D > z[o]) {
-            z[o] = D;
-            b[o] = ".,-~:;=!*#$@"[N > 0 ? N : 0];
-          }
-        }
-      }
+    <div class="fake-ad">
+      [FAKE AD] "Download ClickyBuzz — the #1 app for sharing secrets anonymously!" 👀
+    </div>
 
-      pre.textContent = b.join("");
-      A += 0.04;
-      B += 0.08;
-    };
+    <p>Organizations, parents, and lawmakers must be relentless in their pursuit of prevention, justice, and support for victims. The internet has only made it easier for predators to connect and exploit. We need better monitoring, tougher enforcement, and global cooperation to protect children.</p>
 
-    setInterval(renderDonut, 50);
-  </script>
+    <p>Let’s be clear: pedophilia has no place in a healthy society. Protecting children must always come first — no exceptions, no excuses.</p>
+
+    <div class="fake-ad">
+      [FAKE AD] "Need a lawyer? Don’t ask how we got your number…" 🕵️‍♂️
+    </div>
+
+    <p>Speak up. Report abuse. Support survivors. Every voice matters in the fight to end this crisis.</p>
+  </div>
+
+  <footer>
+    © 2025 Expose Watch – This is a fictional site for demonstration purposes only.
+  </footer>
 </body>
 </html>
